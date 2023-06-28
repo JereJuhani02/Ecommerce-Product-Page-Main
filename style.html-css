@@ -1,0 +1,105 @@
+<style>
+  .lopullinen-hinta{color:hsl(220, 14%, 75%);
+    text-decoration: line-through;}
+  
+  .teksti3{color:hsl(219, 9%, 45%)}
+  .teksti3{ 
+    font-family:paragraph;
+    font-size: 16px;
+    width: 400px;
+    line-height: 23px;
+  }
+  
+p{font-family:Kumbh Sans, Arial;}
+ 
+  .teksti2{font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 700;
+  font-size: 25px ;
+  color: hsl(0, 0%, 0%);
+  width: 320px;}
+  
+.ostoskärry{
+  height: 70px
+}
+
+  .teksti1{color:hsl(26, 100%, 55%);
+    font-family:Kumbh Sans;
+  font-weight: bold;
+  Font-size: 16px;
+  
+  }
+  
+    .hinta{color: hsl(220, 13%, 13%);
+    font-weight: bold;
+    font-size: 18px;
+  border:none;
+  background-color:white;
+  }
+  
+  .alennus{color:hsl(26, 100%, 55%);
+    background-color:hsl(25, 100%, 95%);
+    border:none;
+    border-radius: 3px;
+    height: 20px;
+    width: 45px;
+    font-weight: bold;
+  }
+  
+  
+  </style>
+  
+  
+  
+  
+  <style>
+    .osto-button{background-color:hsl(26, 100%, 55%);
+    color:white;
+    border: none;
+    height: 30px;
+    width: 135px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-right: 10px;
+    transition:opacity 0.15s;
+    box-shadow: 10px 15px 10px hsl(27, 66%, 92%) ;
+    margin-left:4px;
+    margin-right:5px;
+  
+    }
+  
+  
+    .osto-button:hover{background-color:hsl(25, 93%, 78%)}
+  
+  </style>
+  
+  <style>
+    .summa-button {background-color:hsl(223, 64%, 98%);
+      font-family:Kumbh Sans;
+    color:white;
+    border: none;
+    height: 30px;
+    width: 85px;
+    border-radius:5px;
+    cursor: pointer;
+    color:hsl(0, 0%, 0%);
+    margin-right: 5px;
+    margin-left: 10px;
+    }
+    
+ 
+
+  </style>
+ 
+  <style>.summa-button{
+    font-weight: bold;
+  }
+  .span-example1 {
+    color:hsl(26, 100%, 55%);
+    margin-left: 3px;
+    margin-right: 19px;
+  }
+  .span-example2  {
+    color:hsl(26, 100%, 55%);
+    margin-left: 19px;
+    margin-right: 3px;
+  }

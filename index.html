@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="img-gallery.css" rel="stylesheet" />
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="flex-container">
+      <div class="Navigation">
+        <div class="Menu">
+          <script src="SwitchOnOff.js"></script>
+          <button type="button" onclick="switchVisible()">
+            <img src="./images/icon-menu.svg" alt="Menu">
+          </button>
+        </div>
+        <img src="./images/logo.svg" alt="Logo">
+        <nav id="Mobile-Menu">
+          <ul>
+            <button type="button" class="close" onclick="switchBackOn()">
+              <img src="./images/icon-close.svg">
+            </button>
+            <li><button>Collections</button></li>
+            <li><button>Men</button></li>
+            <li><button>Women</button></li>
+            <li><button>About</button></li>
+            <li><button>Contact</button></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="profile">
+        <div class="cart">
+          <script src="cartOnOff.js"></script>
+          <button onclick="switchCartVisible()">
+            <img src="./images/icon-cart.svg" alt="cart">
+          </button>
+          <div class="insideCart" id="OpenCart">
+            <p class="CartTitle">Cart</p>
+            <div class="CartEmpty">
+              <p>Your cart is empty.</p>
+            </div>
+          </div>
+        </div>
+        <button class="image-button">
+          <img src="./images/image-avatar.png" alt="avatar" id="Avatar">
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div id="inject"></div>
+      <script src="img-gallery.js"></script>
+    </section>
+    <section>
+      <div class="PlaceHolder">
+
+        <p class="teksti1"> Sneaker Company </p>
+        <p class="teksti2"> Fall Limited Edition Sneakers </p>
+        <p class="teksti3">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole,
+          they’ll
+          withstand everything the weather can offer.</p>
+
+
+
+        <button class="hinta">$125.00</button>
+
+        <button class="alennus">50%</button>
+
+        <p class="lopullinen-hinta">$250.00</p>
+
+        <button class="summa-button"> <span class="span-example1">-</span> <strong>0</strong> <span
+            class="span-example2"> + </span> </button>
+
+        <button class="osto-button"> <img src="images/icon-cart.svg" class="ostoskärry"> <span> Add to cart </span>
+        </button>
+
+
+      </div>
+    </section>
+  </main>
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#"> Conor, Jere, Ria</a>.
+  </div>
+
+  <script>
+    make_gallery("inject", [
+      ["images/image-product-1.jpg", "images/image-product-1-thumbnail.jpg"],
+      ["images/image-product-2.jpg", "images/image-product-2-thumbnail.jpg"],
+      ["images/image-product-3.jpg", "images/image-product-3-thumbnail.jpg"],
+      ["images/image-product-4.jpg", "images/image-product-4-thumbnail.jpg"]])
+  </script>
+</body>
+
+</html>

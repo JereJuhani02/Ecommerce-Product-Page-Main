@@ -1,0 +1,59 @@
+.gallery-root {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.thumbs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+}
+
+.fullroot {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.img-full {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.thumb {
+  width: 80px;
+  border-radius: 10px;
+}
+
+.thumb:hover {
+  opacity: 0.5;
+}
+
+.thumb:active {
+  opacity: 0.2;
+  outline: solid 0.1rem hsl(26, 100%, 55%);
+}
+
+/*
+.buttonleft {}
+
+.buttonright {}
+*/
+
+@media only screen and (max-width: 815px) {
+  .fullroot {
+    margin-bottom: 0;
+  }
+
+  .thumb {
+    display: none;
+  }
+
+  .img-full {
+    width: 100%;
+    border-radius: 0%;
+  }
+
+}
